@@ -4,7 +4,7 @@ class Spree::BillingIntegration::Directebanking < Spree::BillingIntegration
 	preference :project_password, :string
 	preference :notification_password, :string
 
-	attr_accessible :preferred_user_id, :preferred_project_id, :preferred_project_password, :preferred_notification_password, :prefered_server
+	attr_accessible :preferred_user_id, :preferred_project_id, :preferred_project_password, :preferred_notification_password, :preferred_server, :preferred_test_mode
 
 	def server_url
 		"https://www.sofortueberweisung.de/payment/start"
@@ -38,5 +38,9 @@ class Spree::BillingIntegration::Directebanking < Spree::BillingIntegration
 
 	def provider_class
 		ActiveMerchant::Billing::Integrations::Directebanking
+	end
+
+	def source_required?
+		false
 	end
 end
