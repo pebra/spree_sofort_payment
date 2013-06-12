@@ -8,7 +8,4 @@ Spree::Core::Engine.routes.draw do
 			end
 		end
 	end
-
-	match '/directebanking' => 'directebanking_status#update', via: :get, as: 'directebanking_status_update'
-
 end

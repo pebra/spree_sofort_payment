@@ -21,6 +21,7 @@ module Spree
 
 
 				@order.update_attributes({:state => "complete", :completed_at => Time.now}, :without_protection => true)
+				@order.finalize!
 				#until @order.state == "complete"
 				#	binding.pry
 				#	if @order.next!
