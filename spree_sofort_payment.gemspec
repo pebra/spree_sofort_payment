@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_sofort_payment'
   s.version     = '2.0.0'
-  s.summary     = 'TODO: Add gem summary here'
+  s.summary     = 'This extension adds the German payment provider Sofort AG to the avaiable payment methods'
   s.description = 'TODO: Add (optional) gem description here'
   s.required_ruby_version = '>= 1.9.3'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  s.author    = 'Peter Brändel'
+  s.email     = 'peter@bitbites.de'
+  s.homepage  = 'http://bitbites.de'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
 
 	s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'capybara', '~> 2.1'
+	s.add_development_dependency 'therubyracer'
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'factory_girl', '~> 4.2'
