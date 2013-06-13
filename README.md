@@ -1,7 +1,12 @@
 SpreeSofortPayment
 ==================
 
-Introduction goes here.
+CAUTION: Not ready for porduction, yet.
+
+Set up your success link in your Sofort AG settings as following:
+``` shell
+http://your-shop-url.com/orders/-USER_VARIABLE_1-/checkout/directebanking_return?status=-STATUS-&payment_method_id=-USER_VARIABLE_0-&order_id=-USER_VARIABLE_1-
+```
 
 Installation
 ------------
